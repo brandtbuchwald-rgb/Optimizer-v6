@@ -1,5 +1,8 @@
 const state = { rules: null, slots: {}, currentSlot: null };
-
+function openEditor(slot){
+  console.log("Opening editor for", slot); // debug
+  ...
+}
 function openEditor(slot) {
   state.currentSlot = slot;
   document.getElementById('modalTitle').textContent = slot;
