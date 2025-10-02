@@ -1,0 +1,5 @@
+{
+  "version":"2.5",
+  "tiers":["Primal","Original","Chaos","Abyss"],
+  "caps":{"critFromGearRune":50,"evaFromGearRune":40,"tankDRTarget":100}
+}

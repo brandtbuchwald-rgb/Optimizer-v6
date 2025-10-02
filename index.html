@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rediscover Gear Builder v2.5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Rediscover • Gear Builder v2.5</div>
+    <button id="btnExport" class="primary">Export PNG</button>
+  </header>
+
+  <main>
+    <div class="gear-ring" id="gearRing">
+      <div class="slot helm" data-slot="Helm">Helm</div>
+      <div class="slot chest" data-slot="Armor">Chest</div>
+      <div class="slot gloves" data-slot="Gloves">Gloves</div>
+      <div class="slot boots" data-slot="Boots">Boots</div>
+      <div class="slot belt" data-slot="Belt">Belt</div>
+      <div class="slot ring" data-slot="Ring">Ring</div>
+      <div class="slot weapon" data-slot="Weapon">Weapon</div>
+      <div class="slot necklace" data-slot="Necklace">Necklace</div>
+    </div>
+
+    <section class="preview-wrap">
+      <div id="shareCard" class="share-card">
+        <div class="sc-header">
+          <div class="sc-title">Rediscover Build Totals</div>
+        </div>
+        <div class="sc-stats">
+          <div><strong>AS</strong> <span id="scAS">0%</span></div>
+          <div><strong>CR</strong> <span id="scCR">0%</span></div>
+          <div><strong>EVA</strong> <span id="scEV">0%</span></div>
+          <div><strong>DR</strong> <span id="scDR">0%</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Editor -->
+  <div id="editorModal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle"></h3>
+      <label>Tier <select id="editTier"></select></label>
+      <label>Rune <select id="editRune"><option></option><option>ATK SPD</option><option>Crit Chance</option><option>Evasion</option><option>DR</option></select></label>
+      <label>Special <select id="editSpecial"><option></option><option>Crit DMG +80%</option><option>HP% +52%</option><option>Boss DMG</option><option>Racial DMG</option></select></label>
+      <div id="editLines"></div>
+      <button id="btnSave">Save</button>
+      <button id="btnCancel">Cancel</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
